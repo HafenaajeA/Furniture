@@ -1,0 +1,248 @@
+*,
+*::after
+*::before{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Kreon', serif;
+    line-height: 1.6;
+}
+img{
+    max-width: 100%;
+    display: block;
+    width: 100%
+
+}
+h1,
+h2,
+h3,
+p{
+    margin: 0;
+}
+
+/* start of nav menu */
+header, .intro{
+    display: flex;
+    width:100%;
+    align-self: stretch;
+    align-items: center;
+    justify-content:space-around;
+    flex-flow: row wrap;
+    gap:15%;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.main h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    align-self: flex-start;
+    margin-bottom: -16px;
+}
+
+.sidekick-text, li {
+    color:#e5e7eb;
+    font-size: 18px;
+}
+button {
+    background-color: #f7601b;
+    flex:0 1 auto;
+    width:100px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    color:#f9faf8;
+    font-weight: bold;
+    padding-bottom: 2px;
+}
+
+header ul {
+    display:flex;
+    padding: 12px;
+    margin-top: 0;
+    gap:16px;
+}
+
+li {
+    list-style: none;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: #f9faf8;
+}
+a:hover {
+    color: #0004fd;
+}
+
+/* end of nav menu */
+
+
+.section{
+    padding: 7px 0;
+}
+.container{
+    width: 85%;
+    max-width: 65em;
+    margin: 0 auto;
+}
+.split{
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.split> *{
+    flex-basis: 40%;
+    min-width: 15em;
+}
+.spacing>*+*{
+    margin-top: var(--spacer, 2rem);
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--clr-text, #fff);
+    font-weight: 700;
+    font-size: 1.125em;
+    background: var(--clr-accent, darkorange);
+    padding: .5em 1.25em;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: transform 250ms ease-in-out, opacity 175ms linear;
+
+}
+.btn:hover,
+.btn:focus{
+    transform: scale(1.1);
+    opacity: .9;
+}
+.primary-title{
+    font-size: 4rem;
+    font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem);
+    line-height: 1;
+    text-transform: uppercase;
+}
+.section-title{
+    text-align: center;
+    font-size: clamp(2.5rem, calc(5vw + 1rem), 4.5rem);
+    line-height: 1;
+    color: #333;
+    margin-bottom: 5rem;
+    margin-top: 2rem;;
+
+
+}
+.hero{
+    color: darkorange;
+    text-align: center;
+    padding: 15em 0;
+    background-color: #444;
+    background-image: url(../images/furn1.jpg), radial-gradient(#444, #111);
+    /* @supports(background-blend-mode: multiply){
+        background-image: url(../images/furn12.jpg), radial-gradient(#444, #111);
+        background-blend-mode: multiply;
+    } */
+    /* background-size: 12%; */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 100px;
+    background-position: center;
+}
+.featured{
+    background: #eee;
+    background-size: 80%;
+}
+.featured > .featured__item{
+    display: block;
+    position: relative;
+    transform: scale(.5);
+    transition: transform 250ms ease-in-out;
+}
+
+.featured__item:hover{
+    transform: scale(1);
+}
+.our-product{
+    background-color: #eee;
+}
+.product{
+    border-radius: 1em;
+    background:-moz-linear-gradient(orange, blue);
+    padding: 3em;
+    margin-bottom: 3em;
+    text-align: center;
+}
+footer{
+    display: block;
+    width: 100%;
+    padding: 24px 0px;
+    text-align: center;
+    align-self: stretch;
+    color: #222;
+}
+/* sign up section */
+.quote {
+    padding:80px 35%;
+    background: url(images/pexels-aleksandar-pasaric-6560708.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-size: 36px;
+    font-weight:lighter;
+    font-style: italic;
+    color:#1F2937;
+    text-shadow: 0 0 5px #c8cac6,
+    0 0 15px #f9faf8,
+    0 0 30px #f9faf8;
+}
+
+.quote p{
+    mix-blend-mode:luminosity;
+   
+}
+
+.author {
+    color: blue;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.sign-up-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:32px;
+    padding:36px;
+    background:linear-gradient(orange, blue);
+    border-radius: 5px;
+    margin:100px auto;
+    color: #f9faf8;
+    flex-flow: row wrap;
+    font-size: 36px;
+    
+}
+
+.sign-up-section button {
+    border: 2px solid #f9faf8;
+}
+
+button:hover {
+    background-color: #f9faf8;
+    color: #f7601b;
+}
+
+.sign-up-section p {
+    margin:0px;
+}
+
+.small {
+    font-size: 20px;
+}
+/* end quote section */
